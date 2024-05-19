@@ -5,6 +5,7 @@ import { App } from './components/App';
 import './global.css';
 import { HomePage } from './pages/HomePage';
 import { ReservationPage } from './components/ReservationPage';
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -15,7 +16,7 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: '/reservation',
+        path: '/reservation/:id',
         element: <ReservationPage />,
       },
     ],
